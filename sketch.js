@@ -50,7 +50,7 @@ function draw() {
     }
 
     fill(backColor);
-    rect(0, 0, width, height)
+    rect(0, 0, width, height);
 
   	fill(dayNight);
   	rect(0, 0, hours, height/2.1);
