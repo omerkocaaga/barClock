@@ -24,9 +24,10 @@ function setup() {
   	
 }
 
-function draw() {
-	  background(0);
+function draw() { 
+    var dayNight = color (120, 144, 156);
 
+    background(0);
     strokeCap(SQUARE);
   	
   	var h = hour();
@@ -40,20 +41,20 @@ function draw() {
   	noStroke();
     
     if (h < 8) {
-      var dayNight = color (100, 124, 138);
       var backColor = color(200);
+      var emptyBar = color(210);
     } else if (h > 20) {
-      var dayNight = color (100, 124, 138);
       var backColor = color(200);
+      var emptyBar = color(210);
     } else {
-      var dayNight = color (79, 195, 247);
       var backColor = color(255);
+      var emptyBar = color(240);
     }
 
     fill(backColor);
     rect(0, 0, width, height);
 
-    fill(210);
+    fill(emptyBar);
     rect(0,0,width,height);
 
   	fill(dayNight);
