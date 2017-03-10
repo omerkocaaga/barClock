@@ -19,6 +19,7 @@ function preload() {
 function setup() {
 	  resize();
 	  createCanvas(widthC, heightC);
+
 	
   	
 }
@@ -51,6 +52,9 @@ function draw() {
 
     fill(backColor);
     rect(0, 0, width, height);
+
+    fill(210);
+    rect(0,0,width,height);
 
   	fill(dayNight);
   	rect(0, 0, hours, height/2.1);
